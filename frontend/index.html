@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CPU Scheduler</h1>
+    <form id="scheduler-form">
+        <div id="processes">
+            <div class="process">
+                <label>Arrival Time: <input type="number" name="arrivalTime"></label>
+                <label>Burst Time: <input type="number" name="burstTime"></label>
+                <label>Priority: <input type="number" name="priority"></label>
+            </div>
+        </div>
+        <button type="button" id="add-process">Add Process</button>
+        <label>Quantum Time: <input type="number" name="quantumTime"></label>
+        <button type="submit">Run Scheduler</button>
+    </form>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
