@@ -1,10 +1,12 @@
 # CPU-Scheduler
-**1. Introduction**
-   In this project, I have implemented various CPU scheduling algorithms used in operating systems, along with a user-friendly frontend interface. The goal was to provide a comprehensive solution for visualizing and understanding different CPU scheduling techniques, including First-Come, First-Served (FCFS), Shortest Job First (SJF), Priority Scheduling, Round Robin (RR), and an Improved Round Robin (IRR) algorithm.
+1. Introduction
 
-**2. Project Details**
+    In this project, I have implemented various CPU scheduling algorithms used in operating systems, along with a user-friendly frontend interface. The goal was to provide a comprehensive solution for visualizing and understanding different CPU scheduling techniques, including First-Come, First-Served (FCFS), Shortest Job First (SJF), Priority Scheduling, Round Robin (RR), and an Improved Round Robin (IRR) algorithm.
+
+3. Project Details
    
    a. Backend
+
 The backend is implemented in C++, handling the core logic and computations for CPU scheduling algorithms. It defines data structures like Process and Output to represent processes and scheduling results, respectively.
 
 Algorithm Implementations: The backend provides implementations for various CPU scheduling algorithms, each following a specific logic to determine the execution order of processes: 
@@ -26,6 +28,7 @@ g++ -o backend/scheduler backend/algorithms/scheduler.cpp
 
 
    b. Frontend
+   
    The frontend is developed using HTML, CSS, and JavaScript, providing a user-friendly interface. Users can input the number of processes, along with their arrival time, burst time, and priority (if applicable). They can also select the desired scheduling algorithm from a dropdown or set of buttons. After the backend computations, the frontend displays the results, including process details, average waiting time, average turnaround time, CPU utilization, and a graphical representation of the Gantt chart.
    
 To set up the frontend, navigate to the project directory and run the following commands:
@@ -38,6 +41,7 @@ npm start
 
 
    c. Integration
+   
    To integrate the backend (C++) and frontend (JavaScript), I utilized Node.js with C++ addons. This allowed the frontend to make HTTP requests to the server, which in turn executed the C++ code and returned the results to the frontend for visualization.
 
 3. Features and Additional Creativity
@@ -47,7 +51,8 @@ npm start
    - Best Algorithm Recommendation: The project analyzes the results of all implemented algorithms and recommends the best algorithm based on the lowest average waiting time and average turnaround time.
    - Process Prioritization: For the Priority Scheduling algorithm, users can dynamically adjust the priority of processes and observe the impact on scheduling order and performance metrics.
 
-5. Optimal Scheduling Algorithm 
+5. Optimal Scheduling Algorithm
+   
 Among the implemented scheduling algorithms, Round Robin (RR) is considered the most optimal and widely used in modern time-shared computer systems. However, each algorithm has its own advantages and disadvantages, which are discussed below:
 
 First-Come, First-Served (FCFS) 
