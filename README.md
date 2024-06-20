@@ -1,9 +1,9 @@
 # CPU-Scheduler
-1. Introduction
+#1. Introduction
 
     In this project, I have implemented various CPU scheduling algorithms used in operating systems, along with a user-friendly frontend interface. The goal was to provide a comprehensive solution for visualizing and understanding different CPU scheduling techniques, including First-Come, First-Served (FCFS), Shortest Job First (SJF), Priority Scheduling, Round Robin (RR), and an Improved Round Robin (IRR) algorithm.
 
-3. Project Details
+#2. Project Details
    
    a. Backend
 
@@ -55,14 +55,14 @@ Then, start the application using:
    
    To integrate the backend (C++) and frontend (JavaScript), I utilized Node.js with C++ addons. This allowed the frontend to make HTTP requests to the server, which in turn executed the C++ code and returned the results to the frontend for visualization.
 
-3. Features and Additional Creativity
+#3. Features and Additional Creativity
    
    - Interactive Gantt Chart: The frontend provides an interactive Gantt chart visualization, allowing users to hover over or click on process blocks to display additional information.
    - Algorithm Comparison: Users can select multiple algorithms and compare their performance side-by-side.
    - Best Algorithm Recommendation: The project analyzes the results of all implemented algorithms and recommends the best algorithm based on the lowest average waiting time and average turnaround time.
    - Process Prioritization: For the Priority Scheduling algorithm, users can dynamically adjust the priority of processes and observe the impact on scheduling order and performance metrics.
 
-5. Optimal Scheduling Algorithm
+#4. Optimal Scheduling Algorithm
    
 Among the implemented scheduling algorithms, Round Robin (RR) is considered the most optimal and widely used in modern time-shared computer systems. However, each algorithm has its own advantages and disadvantages, which are discussed below:
 
@@ -91,7 +91,7 @@ Improved Round Robin (IRR)
 • Advantage: Combines the benefits of Round Robin and Shortest Job First algorithms, minimizing waiting time and turnaround time while avoiding starvation. 
 • Disadvantage: Slightly more complex to implement than the basic Round Robin algorithm.
 
-6. Summary and Further Improvements
+#5. Summary and Further Improvements
    
    The project successfully implemented various CPU scheduling algorithms, providing a user-friendly interface for visualization and understanding their behavior. The integration of the backend and frontend components allowed for efficient computations and interactive visualizations.
 
