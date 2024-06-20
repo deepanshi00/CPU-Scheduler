@@ -1,7 +1,7 @@
 # CPU-Scheduler
 # Introduction
 
-    In this project, I have implemented various CPU scheduling algorithms used in operating systems, along with a user-friendly frontend interface. The goal was to provide a comprehensive solution for visualizing and understanding different CPU scheduling techniques, including First-Come, First-Served (FCFS), Shortest Job First (SJF), Priority Scheduling, Round Robin (RR), and an Improved Round Robin (IRR) algorithm.
+In this project, I have implemented various CPU scheduling algorithms used in operating systems, along with a user-friendly frontend interface. The goal was to provide a comprehensive solution for visualizing and understanding different CPU scheduling techniques, including First-Come, First-Served (FCFS), Shortest Job First (SJF), Priority Scheduling, Round Robin (RR), and an Improved Round Robin (IRR) algorithm.
 
 # Project Details
    
