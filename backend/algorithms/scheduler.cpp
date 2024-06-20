@@ -243,6 +243,7 @@ void findBestAlgorithm(const vector<Output>& outputs) {
             bestIndex = i;
         }
     }
+    cout<<endl;
     cout << "The best scheduling algorithm is: ";
     switch (bestIndex) {
         case 0: cout << "First-Come, First-Served (FCFS) Scheduling\n"; break;
@@ -272,16 +273,32 @@ int main() {
     outputs.push_back(rr());
     outputs.push_back(irr());
 
-    for (const auto& output : outputs) {
-        cout << "\nGantt Chart:\n";
+    for (int i = 0; i < outputs.size(); i++){
+
+        auto output = outputs[i];
+
+        cout << endl;
+
+        switch (i) {
+        case 0: cout << "First-Come, First-Served (FCFS) Scheduling:\n"; break;
+        case 1: cout << "Shortest Job First (SJF) Scheduling:\n"; break;
+        case 2: cout << "Priority Scheduling:\n"; break;
+        case 3: cout << "Round Robin (RR) Scheduling:\n"; break;
+        case 4: cout << "Improved Round Robin (IRR) Scheduling\n"; break;
+        }
+        // cout << endl;
+        // cout << "Algorithm: " << output.algorithmName << "\n";
+        cout << "Gantt Chart:\n";
         for (const auto& entry : output.ganttChart) {
             cout << "P" << entry.first << ": " << entry.second.first << " - " << entry.second.second << "\n";
         }
         cout << "Average Waiting Time: " << output.averageWaitingTime << " ms\n";
         cout << "Average Turnaround Time: " << output.averageTurnaroundTime << " ms\n";
         cout << "CPU Utilization: " << output.cpuUtilization << " %\n";
+        cout << endl;
     }
-
+    
     findBestAlgorithm(outputs);
+
     return 0;
 }
